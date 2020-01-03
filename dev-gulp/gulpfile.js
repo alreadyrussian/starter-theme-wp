@@ -24,7 +24,7 @@ var buffer = require('vinyl-buffer');
 gulp.task("sassDev", function(){
     // in order to use sass in gulp with partial scss, it needs to create partial(file with underscore) and import it in a main scss file
     // without underscore. Underscore in gulp sass it won't let to compile the scss file.
-    return gulp.src("../digitalism/src/sass/**/*.scss")
+    return gulp.src("../digitalism/src/sass/**/style.scss")
     .pipe(sass())
     // 3. add autoprefixer
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
