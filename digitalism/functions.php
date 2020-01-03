@@ -38,6 +38,7 @@ require get_template_directory() . '/inc/jetpack.php';
 //------------------------------------------------------------------Hooks-------------------------------------------------
 add_action( 'after_setup_theme', 'digitalism_setup' );
 add_action( 'after_setup_theme', 'digitalism_content_width', 0 );
+add_action( 'wp_enqueue_scripts', 'digitalism_jquery', 0 );
 add_action( 'widgets_init', 'digitalism_widgets_init' );
 add_action( 'wp_enqueue_scripts', 'digitalism_scripts' );
 
